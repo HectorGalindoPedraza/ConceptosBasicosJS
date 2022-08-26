@@ -127,7 +127,7 @@ En una función 👇
 ### ¿Qué es un condicional?
 Un condicional es una estructura de control que nos permite cambiar el flujo de ejecucion del programa evaluando si una expresion es verdadera o falsa.
 ### ¿Qué tipo de condicionales existen en JavaScript y cuáles son sus diferencias?
-Existen dos estructuras de condicionales, estás son: `if...else` y `switch`. Tambien tenemos los operadores lógicos que son: `!`, `&&` y `||` que crean la posibilidad de establecer condiciones.
+Existen dos estructuras de condicionales, estás son: `if...else` y `switch`. Tambien tenemos los operadores lógicos que son: `!`, `&&` y `||` que crean la posibilidad de establecer condiciones`
 - `if`: Si la expresion dentro de los parentesis es verdadera se ejecutara el codigo entre las llaves.
     ``` 
     if (expresion)
@@ -161,7 +161,73 @@ Existen dos estructuras de condicionales, estás son: `if...else` y `switch`. Ta
             // Ejecutael código si ningua de las condiciones anteriories es verdadera.
         }
     ```
-- `switch`: 
+- `switch`:Evalua un valor en diferentes casos con sus respectivas expresiones, si la expresion es verdadera necesitara un `break` para que termine de evaluar los casos, de lo contrario seguira ejecutando la estructura.
+    ```
+    const mascota = "perro";
+ 
+    switch (mascota) {
+      case "lagarto":
+        console.log("Tengo un lagarto");
+        break;
+      case "perro":
+        console.log("Tengo un perro");
+        break;
+      case "gato":
+        console.log("Tengo un gato");
+        break;
+      case "serpiente":
+        console.log("Tengo una serpiente");
+        break;
+      case "loro":
+        console.log("Tengo un loro");
+        break;
+      default:
+        console.log("No tengo mascota");
+        break;
+    } 
+    ```
+    ### ¿Puedo combinar funciones y condicionales?
+    ¡Sí claro! Podemos combinar funciones y condicionales, por ejemplo si necesitamos validar el valor que nos retorna una funcion podemos usar una estructura condicional.
+    ## 2️⃣ Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
+    ```
+        const tipoDeSuscripcion = "Basic";
+
+        switch (tipoDeSuscripcion) {
+           case "Free":
+               console.log("Solo puedes tomar los cursos gratis");
+               break;
+           case "Basic":
+               console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+               break;
+           case "Expert":
+               console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+               break;
+           case "ExpertPlus":
+               console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+               break;
+        }
+    ```
+    __If, else if y else__:
+    ```
+        const tipoDeSuscripcion = 'Basic'
+
+        if (tipoDeSuscripcion == 'Free')
+        {
+            console.log("Solo puedes tomar los cursos gratis");
+        }
+        else if (tipoDeSuscripcion == 'Basic')
+        {
+            console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+        }
+        else if (tipoDeSuscripcion == 'Expert')
+        {
+            console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+        }
+        else if (tipoDeSuscripcion == 'ExpertPlus')
+        {
+            console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+        }
+    ```
  
  
  
