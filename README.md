@@ -1,7 +1,6 @@
-# Test de JavaScript 
+# Conceptos básicos de JavaScript 
 --- 
-.
-## 1️⃣Responde las siguientes preguntas en la sección de comentarios:
+
 ### ¿Qué es una variable?
 Una variable es un espacio en memoria, es la forma en que le decimos al computador que vamos a guardar un dato de cualquier tipo ([tipos de datos primitivos](https://developer.mozilla.org/es/docs/Glossary/Primitive)) en un lugar de la memoria de nuestro computador. Para declarar una variable en JavaScript usamos las palabras reservadas let y const, estas dos tienen un diferente uso.
  - __let__: Hacemos uso de esta palabra para declarar una variable cuyo valor puede modificarse durante la ejecucion del programa, es decir, el valor que asignamos a las variables declaradas con esta palabra puede variar durante el flujo del progama.
